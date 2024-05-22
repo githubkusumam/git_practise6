@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('checkot ') {
+        stage('checkout ') {
             steps {
-               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/rajcocvs/git_practise6.git']])
+               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/githubkusumam/git_practise6.git']])
             }
         }
         stage('build ') {
